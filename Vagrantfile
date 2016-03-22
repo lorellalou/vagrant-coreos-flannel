@@ -23,12 +23,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       cloudstack.display_name = "core01"
       cloudstack.service_offering_name = "Tiny"
       cloudstack.security_group_names = ['default']
-      cloudstack.keypair = "lrolaz@home"
-      cloudstack.ssh_key = "~/.ssh/id_rsa"
+      cloudstack.keypair = "galileo-key-pair"
+      cloudstack.ssh_key = "~/.ssh/galileo-key-pair.pem"
       cloudstack.ssh_user = "core"
       
       cloudstack.user_data = File.read("user-data.config")
-      override.vm.box = "dummy"
+      override.vm.box = "cloudstack"
     end
   end
   
@@ -50,12 +50,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       cloudstack.display_name = "core02"
       cloudstack.service_offering_name = "Tiny"
       cloudstack.security_group_names = ['default']
-      cloudstack.keypair = "lrolaz@home"
-      cloudstack.ssh_key = "~/.ssh/id_rsa"
+      cloudstack.keypair = "galileo-key-pair"
+      cloudstack.ssh_key = "~/.ssh/galileo-key-pair.pem"
       cloudstack.ssh_user = "core"
       
       cloudstack.user_data = File.read("user-data.config")
-      override.vm.box = "dummy"
+      override.vm.box = "cloudstack"
     end
   end
   
@@ -77,12 +77,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       cloudstack.display_name = "core03"
       cloudstack.service_offering_name = "Tiny"
       cloudstack.security_group_names = ['default']
-      cloudstack.keypair = "lrolaz@home"
-      cloudstack.ssh_key = "~/.ssh/id_rsa"
+      cloudstack.keypair = "galileo-key-pair"
+      cloudstack.ssh_key = "~/.ssh/galileo-key-pair.pem"
       cloudstack.ssh_user = "core"
       
       cloudstack.user_data = File.read("user-data.config")
-      override.vm.box = "dummy"
+      override.vm.box = "cloudstack"
     end
   end    
  
@@ -104,12 +104,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       cloudstack.display_name = "core04"
       cloudstack.service_offering_name = "Tiny"
       cloudstack.security_group_names = ['default']
-      cloudstack.keypair = "lrolaz@home"
-      cloudstack.ssh_key = "~/.ssh/id_rsa"
+      cloudstack.keypair = "galileo-key-pair"
+      cloudstack.ssh_key = "~/.ssh/galileo-key-pair.pem"
       cloudstack.ssh_user = "core"
       
       cloudstack.user_data = File.read("user-data.config")
-      override.vm.box = "dummy"
+      override.vm.box = "cloudstack"
     end
   end    
  
